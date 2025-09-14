@@ -27,7 +27,7 @@ function App() {
           alt="flower"
           size="h-80"
         ></FlowerReveal> */}
-        <Sobre message="Te mereces tus flores amarillas 🌻"></Sobre>
+        <Sobre message="Te mereces tus flores amarillas 🌻"></Sobre>{' '}
       </main>
     </>
   )

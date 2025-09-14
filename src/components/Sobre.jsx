@@ -15,6 +15,7 @@ export default function RomanticEnvelope({ message = '' }) {
         className="relative w-120 h-100 cursor-pointer"
         onClick={() => openCard()}
       >
+        <h2 className="text-center text-white text-2xl font-bold">ESTE AÑO NO SERÁS ESPECTADORA</h2>
         <div
           className={`absolute left-1/2 bottom-0 w-[240px] h-[150px] bg-white rounded-md shadow-xl border border-gray-200 transition-all duration-700 ease-in-out z-20 flex items-center justify-center text-dark text-center font-serif italic text-lg px-5
           ${
@@ -213,6 +214,9 @@ export default function RomanticEnvelope({ message = '' }) {
             </linearGradient>
           </defs>
         </svg>
+        <h3 className="text-center text-white text-lg font-serif italic">
+          Algo bonito está por llegar. 🌻🌻🌻
+        </h3>
       </div>
     </div>
   )
