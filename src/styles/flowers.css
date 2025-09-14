@@ -1,0 +1,26 @@
+@keyframes clip-reveal {
+  from {
+    clip-path: inset(100% 0 0 0); /* oculta desde arriba */
+  }
+  to {
+    clip-path: inset(0 0 0 0); /* revela toda la imagen */
+  }
+}
+
+.animate-clip-reveal {
+  animation: clip-reveal 5s ease-out forwards;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-twinkle div {
+  animation: twinkle 3s infinite ease-in-out;
+}
