@@ -50,8 +50,8 @@ export default function MovingDot({ children }) {
     <div
       className="fixed cursor-pointer size-30 transition-transform duration-300 pointer-events-none"
       style={{
-        left: position.x,
-        top: position.y,
+        left: `${position.x}px`,
+        top: `${position.y}px`,
         transform: flip ? 'scaleX(-1)' : 'none',
         willChange: 'transform, left, top'
       }}

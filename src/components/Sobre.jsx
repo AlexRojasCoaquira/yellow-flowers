@@ -11,7 +11,7 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
   const openCard = () => {
     console.log('openCard')
     setOpen(!open)
-    togglePlay()
+    // togglePlay()
   }
   const letters = Array.from({ length: 5 })
   return (
