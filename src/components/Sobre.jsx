@@ -21,7 +21,7 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
         onClick={() => openCard()}
       >
         <div
-          className={`absolute left-1/2 bottom-15 w-[300px] h-[180px] bg-white rounded-md shadow-xl border border-gray-200 transition-all duration-800 ease-in-out flex items-center justify-center text-dark text-center font-serif italic text-lg px-5
+          className={`absolute left-1/2 bottom-15 w-[300px] h-[150px] bg-white rounded-md shadow-xl border border-gray-200 transition-all duration-800 ease-in-out flex items-center justify-center text-dark text-center font-serif italic text-lg px-5
           ${
             open
               ? '-translate-x-1/2 opacity-100 animate-updown z-20'
