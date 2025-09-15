@@ -2,7 +2,7 @@ import React from 'react'
 
 export function SunflowerReveal({}) {
   return (
-    <div className="flowers scale-120 md:scale-60">
+    <div className="flowers scale-150 md:scale-60">
       <div className="flower flower--1">
         <div className="flower__leafs flower__leafs--1">
           <div className="flower__leaf flower__leaf--1"></div>
