@@ -15,7 +15,7 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
   }
   const letters = Array.from({ length: 3 })
   return (
-    <div className="h-full flex items-center justify-center px-8">
+    <div className="">
       <div
         className="relative w-sm cursor-pointer"
         onClick={() => openCard()}

@@ -14,10 +14,10 @@ function App() {
 
   return (
     <>
-      <main className="relative w-full p-4 h-100dvh bg-gradient-to-br from-black via-slate-900 to-indigo-950">
-        {/* <h2 className="text-center text-white text-2xl font-bold mb-8">
-          ESTE AÑO NO SERÁS ESPECTADORA
-        </h2> */}
+      <main className="w-full flex gap-10 flex-col items-center justify-center bg-gradient-to-br from-black via-slate-900 to-indigo-950">
+        <div className="text-center text-white text-3xl font-bold ">
+          {/* ESTE AÑO NO SERÁS ESPECTADORA */}
+        </div>
         <Sobre
           message="Ella sabía que él sabía... 🌻"
           showLetter={toggleCard}
