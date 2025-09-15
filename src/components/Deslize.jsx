@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import bee from '@/assets/bee.webp'
 export default function MovingDot({ children }) {
-  const [position, setPosition] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 })
+  const [position, setPosition] = useState({ x: 0, y: 0 })
   const [direction, setDirection] = useState({ dx: 2, dy: 2 })
   const [flip, setFlip] = useState(null)
   const requestRef = useRef(null)
@@ -52,7 +52,6 @@ export default function MovingDot({ children }) {
       style={{
         left: position.x,
         top: position.y,
-        // usamos transform solo para el flip; left/top mantienen la posición
         transform: flip ? 'scaleX(-1)' : 'none',
         willChange: 'transform, left, top'
       }}

@@ -43,9 +43,9 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
 
         {open && (
           <>
-            {/* {letters.map((_, index) => (
+            {letters.map((_, index) => (
               <Deslize key={index}></Deslize>
-            ))} */}
+            ))}
             <SunflowerReveal></SunflowerReveal>
           </>
         )}
