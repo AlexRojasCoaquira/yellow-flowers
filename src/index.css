@@ -3,6 +3,10 @@
 :root {
   height: 100dvh;
 }
+html,
+body {
+  overflow: hidden;
+}
 
 main {
   height: 100dvh;
