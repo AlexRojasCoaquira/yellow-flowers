@@ -1,7 +1,7 @@
 export function Envelope({ open = false }) {
   return (
     <>
-      <div className="relative bg-[#e5e1ce] w-sm h-50">
+      <div className="relative bg-[#e5e1ce] w-full h-50">
         <div className="absolute z-10 w-0 h-0 left-0 bottom-0 border-t-[100px] border-l-[200px] border-b-[100px] border-t-transparent border-b-transparent border-l-[#FAB8DC] "></div>
         <div className="absolute z-10 w-0 h-0 right-0 bottom-0 border-t-[100px] border-r-[200px] border-b-[100px]  border-t-transparent border-b-transparent border-r-[#FAB8DC]"></div>
         <div

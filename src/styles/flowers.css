@@ -2,17 +2,16 @@
   height: 100%;
   position: relative;
   bottom: 0;
-  transform: scale(0.5);
   display: flex;
   justify-content: center;
-  z-index: 0;
+  z-index: 1;
 }
 
 .flower {
   position: absolute;
   bottom: 10vmin;
   transform-origin: bottom center;
-  z-index: 0;
+  z-index: 1;
   --fl-speed: 0.8s;
 }
 

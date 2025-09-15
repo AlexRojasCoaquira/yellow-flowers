@@ -11,9 +11,9 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
   const openCard = () => {
     console.log('openCard')
     setOpen(!open)
-    // togglePlay()
+    togglePlay()
   }
-  const letters = Array.from({ length: 5 })
+  const letters = Array.from({ length: 3 })
   return (
     <div className="h-full flex items-center justify-center">
       <div
@@ -37,9 +37,9 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
         <div className="relative h-50 ">
           <Envelope open={open} />
         </div>
-        <h3 className="absolute text-center text-white text-lg font-serif italic mt-3">
+        {/* <h3 className="absolute text-center text-white text-lg font-serif italic mt-3">
           Algo bonito está por llegar... 🌻🌻🌻
-        </h3>
+        </h3> */}
 
         {open && (
           <>
