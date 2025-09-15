@@ -11,11 +11,11 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
   const openCard = () => {
     console.log('openCard')
     setOpen(!open)
-    togglePlay()
+    // togglePlay()
   }
   const letters = Array.from({ length: 5 })
   return (
-    <div className="h-full flex items-center justify-center ">
+    <div className="h-full flex items-center justify-center">
       <div
         className="relative w-sm cursor-pointer"
         onClick={() => openCard()}
@@ -43,9 +43,9 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
 
         {open && (
           <>
-            {letters.map((_, index) => (
+            {/* {letters.map((_, index) => (
               <Deslize key={index}></Deslize>
-            ))}
+            ))} */}
             <SunflowerReveal></SunflowerReveal>
           </>
         )}
