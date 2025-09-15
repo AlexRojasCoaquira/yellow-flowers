@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import bee from '@/assets/bee.webp'
 export default function MovingDot({ children }) {
-  const [position, setPosition] = useState({ x: 100, y: 100 })
+  const [position, setPosition] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 })
   const [direction, setDirection] = useState({ dx: 2, dy: 2 })
   const [flip, setFlip] = useState(null)
   const requestRef = useRef(null)
@@ -9,8 +9,6 @@ export default function MovingDot({ children }) {
   useEffect(() => {
     const animate = () => {
       setPosition((prev) => {
-        // console.log(direction.dx)
-
         let nextX = prev.x + direction.dx
         let nextY = prev.y + direction.dy
 

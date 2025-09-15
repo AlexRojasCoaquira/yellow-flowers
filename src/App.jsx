@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Deslize from './components/Deslize'
 import BackgroundMusic from './components/Audio'
 import FlowerReveal from './components/FlowerReveal'
 import flower from '@/assets/image.png'
-import SunflowerReveal from './components/SunFlower'
+import { SunflowerReveal } from './components/SunFlower'
 import Sobre from './components/Sobre'
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,19 +14,14 @@ function App() {
 
   return (
     <>
-      <main className="w-full h-100dvh bg-gray-900 bg-amber-600">
-        <Deslize></Deslize>
-        <Deslize></Deslize>
-        <Deslize></Deslize>
-        <Deslize></Deslize>
-        <Deslize></Deslize>
-        {/* <BackgroundMusic></BackgroundMusic> */}
-        {/* <FlowerReveal
-          src={flower}
-          alt="flower"
-          size="h-80"
-        ></FlowerReveal> */}
-        <Sobre message="Te mereces tus flores amarillas 🌻"></Sobre>{' '}
+      <main className="relative w-full h-100dvh bg-gradient-to-br from-black via-slate-900 to-indigo-950">
+        {/* <h2 className="text-center text-white text-2xl font-bold mb-8">
+          ESTE AÑO NO SERÁS ESPECTADORA
+        </h2> */}
+        <Sobre
+          message="Ella sabía que él sabía... 🌻"
+          showLetter={toggleCard}
+        ></Sobre>
       </main>
     </>
   )

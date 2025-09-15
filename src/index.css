@@ -7,3 +7,42 @@
 main {
   height: 100dvh;
 }
+@keyframes animate-updown {
+  0% {
+    transform: translateY(0px);
+    z-index: 10;
+  }
+  50% {
+    transform: translateY(-160px);
+    z-index: 10;
+  }
+  100% {
+    transform: translateY(0px);
+    z-index: 20;
+    opacity: 1;
+  }
+}
+
+.animate-updown {
+  animation: animate-updown 3s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #000;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  perspective: 1000px;
+}
