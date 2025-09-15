@@ -17,6 +17,11 @@ function App() {
       <main className="w-full flex gap-10 flex-col items-center justify-center bg-gradient-to-br from-black via-slate-900 to-indigo-950">
         <div className="text-center text-white text-3xl font-bold ">
           {/* ESTE AÑO NO SERÁS ESPECTADORA */}
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
         <Sobre
           message="Ella sabía que él sabía... 🌻"
