@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <main className="relative w-full h-100dvh bg-gradient-to-br from-black via-slate-900 to-indigo-950">
+      <main className="relative w-full p-4 h-100dvh bg-gradient-to-br from-black via-slate-900 to-indigo-950">
         {/* <h2 className="text-center text-white text-2xl font-bold mb-8">
           ESTE AÑO NO SERÁS ESPECTADORA
         </h2> */}
