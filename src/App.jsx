@@ -7,6 +7,10 @@ import { SunflowerReveal } from './components/SunFlower'
 import Sobre from './components/Sobre'
 function App() {
   const [isOpen, setIsOpen] = useState(false)
+  const params = new URLSearchParams(window.location.search)
+  const q = params.get('q')
+  const decodedQ =
+    atob(q).toLocaleLowerCase().charAt(0).toUpperCase() + atob(q).toLocaleLowerCase().slice(1)
 
   const toggleCard = () => {
     setIsOpen(!isOpen)
@@ -24,7 +28,7 @@ function App() {
           <br />
         </div>
         <Sobre
-          message="Ella sabía que él sabía... 🌻"
+          message={`No serás espectadora este año 🌻 ${decodedQ}`}
           showLetter={toggleCard}
         ></Sobre>
       </main>

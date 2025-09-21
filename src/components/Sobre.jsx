@@ -4,16 +4,25 @@ import audio from '@/assets/flower-yellow.mp3'
 import { Envelope } from './Envelope'
 import Deslize from './Deslize'
 import { SunflowerReveal } from './SunFlower'
+
+function useQuery() {
+  return new URLSearchParams(useLocation().search)
+}
 export default function RomanticEnvelope({ message = '', showLetter }) {
   const [open, setOpen] = useState(false)
   const { togglePlay } = usePlay(audio)
+  const params = new URLSearchParams(window.location.search)
+  const q = params.get('q')
+  const decodedQ = atob(q)
+  console.log('q', q)
 
   const openCard = () => {
     console.log('openCard')
     setOpen(!open)
     togglePlay()
   }
-  const letters = Array.from({ length: 3 })
+  const letters = decodedQ ? decodedQ.split('') : Array.from('   ')
+  console.log('letters', letters)
   return (
     <div className="">
       <div
@@ -43,8 +52,11 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
 
         {open && (
           <>
-            {letters.map((_, index) => (
-              <Deslize key={index}></Deslize>
+            {letters.map((value, index) => (
+              <Deslize
+                key={index}
+                letter={value}
+              ></Deslize>
             ))}
             <SunflowerReveal></SunflowerReveal>
           </>

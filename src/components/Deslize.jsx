@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import bee from '@/assets/bee.webp'
-export default function MovingDot({ children }) {
+import flower from '@/assets/favicon.webp'
+export default function MovingDot({ children, letter }) {
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [direction, setDirection] = useState({ dx: 2, dy: 2 })
   const [flip, setFlip] = useState(null)
@@ -60,6 +61,14 @@ export default function MovingDot({ children }) {
         src={bee}
         alt="moving dot"
       />
+      <img
+        src={flower}
+        alt="moving dot"
+        className="absolute top-2 -left-12 w-16"
+      />
+      <span className=" absolute top-6 -left-5 uppercase text-white text-xl rounded-full  px-2 py-1">
+        {letter}
+      </span>
     </div>
   )
 }
