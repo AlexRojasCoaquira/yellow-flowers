@@ -13,7 +13,7 @@ export default function RomanticEnvelope({ message = '', showLetter }) {
   const { togglePlay } = usePlay(audio)
   const params = new URLSearchParams(window.location.search)
   const q = params.get('q')
-  const decodedQ = atob(q)
+  const decodedQ = q ? atob(q) : ''
   console.log('q', q)
 
   const openCard = () => {
